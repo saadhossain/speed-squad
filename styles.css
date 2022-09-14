@@ -38,8 +38,9 @@ body {
   background-color: #d65133;
 }
 #question {
-  height: 100px;
+  height: auto;
   display: flex;
+  padding:20px;
   align-items: center;
   justify-content: center;
   color: white;
