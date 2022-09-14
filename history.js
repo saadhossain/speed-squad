@@ -31,8 +31,10 @@ function displayHistory() {
 
     newRow.innerHTML = `
   <h3>${test.questionText}</h3>
-  <p>You took: <span class="bold">${test.timeTaken}</span> seconds</p>
+  <div class="history-data">
+    <p>You took: <span class="bold">${test.timeTaken}</span> seconds</p>
     <p>You made <span class="bold red">${test.errorCount}</span> mistakes</p>
+  </div>
   `;
 
     histories.appendChild(newRow);
