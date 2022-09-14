@@ -234,4 +234,8 @@ button {
     width: 100%;
     flex-direction: column;
   }
+  .title {
+    text-align: left;
+    margin-left: 20px;
+  }
 }
