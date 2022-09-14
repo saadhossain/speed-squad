@@ -141,6 +141,10 @@ button {
   cursor: pointer;
 }
 
+/*Add little margin at the top of Close button*/
+.close-btn{
+  margin-top: 20px;
+}
 #histories {
   display: flex;
   flex-wrap: wrap;
