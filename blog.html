@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Speed Squad</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="menu">Home</a>
+        <h1 class="title"><img src="./logo-blog.png" /></h1>
+    </header>
+    <!-- Articles Start from here -->
+    <main class="blog-container">
+        <div id="blog-container">
+            <!-- Post 1 -->
+            <article class="card">
+                <div>
+                    <h3>Difference between localStorage and sessionStorage</h3>
+                    <p class="blog-description">
+                        <span class="code">Local Storage</span> data has no expiration time. It store at your browser memory until you manually clear data. <br><br>
+                        The keys and the values stored with localStorage are always in the UTF-16 string format, which uses two bytes per character. As with objects, integer keys are automatically converted to strings.
+
+                        <br><br>
+                        <span class="code">Session Storage</span> Data store at browser memory same as local Storage, but in the term of session storage data will be cleared every time you close the tabe or window.<br>
+                        Whenever a document is loaded in a particular tab in the browser, a unique page session gets created and assigned to that particular tab. That page session is valid only for that particular tab.
+                        <br><br>
+                        The difference between sessionStorage and localStorage is that localStorage data does not expire, whereas sessionStorage data is cleared when the page session ends.
+                    </p>
+                </div>
+                <!-- blog meta data -->
+                <div class="blog-meta">
+                    <img src="./author.svg" alt="Author Image">
+                    <div>
+                        <h4>Saad Hossain</h4>
+                        <p>On 14 Sept 2022</p>
+                    </div>
+                </div>
+            </article>
+            <!-- Post 2 -->
+            <article class="card">
+                <div>
+                    <h3>Difference between Global Scope and Block Scope</h3>
+                    <p class="blog-description">
+                        <span class="code">Global Scope</span> Variables declared Globally (outside any function) have Global Scope.<br>
+                        Global variables can be accessed from anywhere in a JavaScript program.<br><br>
+                        Variables declared with <span class="code">var, let</span> and <span class="code">const</span> are quite similar when declared outside a block.<br><br>
+                        <span class="code">Block Scope</span> Variable declared in a function is a block scope variable. I can't access outside of the function.<br><br>
+                        ES6 introduced two important new JavaScript keywords: <span class="code">let</span> and <span class="code">const</span>. These two keywords provide Block Scope in JavaScript.<br><br>
+                        Variables declared with the <span class="code">var</span> keyword, do not have block scope.
+                    </p>
+                </div>
+                <!-- blog meta data -->
+                <div class="blog-meta">
+                    <img src="./author.svg" alt="Author Image">
+                    <div>
+                        <h4>Saad Hossain</h4>
+                        <p>On 14 Sept 2022</p>
+                    </div>
+                </div>
+            </article>
+            <!-- Post 3 -->
+            <article class="card">
+                <div>
+                    <h3>How many way we can get <span class="code">Undefined</span></h3>
+                    <p class="blog-description">
+                        There are some common case, we may get undefiened output from our code.<br><br>
+                        1. Variable that is not initialized that will give undefiend output<br><br>
+                        2. If we don't return anything from a function it will give us undefiened<br><br>
+                        3. If we don't pass parameter / Function with no parameter will give us a undefiend<br><br>
+                        4. If we want to a property that doesn'to exists on a object that will give undefiened<br><br>
+                        5. If we try to access an element of an array that is out of range will give undefiend<br><br>
+                    </p>
+                </div>
+                <!-- blog meta data -->
+                <div class="blog-meta">
+                    <img src="./author.svg" alt="Author Image">
+                    <div>
+                        <h4>Saad Hossain</h4>
+                        <p>On 14 Sept 2022</p>
+                    </div>
+                </div>
+            </article>
+            <!-- Post 4 -->
+            <article class="card">
+                <div>
+                    <h3>Describe: How Event Loop Works</h3>
+                    <p class="blog-description">
+                        JavaScript has a runtime model based on an <span class="code">event loop</span>, which is responsible for executing the code, collecting and processing events, and executing queued sub-tasks.<br><br>
+                        The browser is then set up to listen for the response from the network, and when it has something to return to you, it will schedule the <span class="code">callback function</span> to be executed by inserting it into the event loop.<br><br>
+                        The <span class="code">Event Loop</span> has one simple job — to monitor the <span class="code">Call Stack</span> and the Callback <span class="code">Queue</span>. If the Call Stack is empty, the Event Loop will take the first event from the queue and will push it to the Call Stack, which effectively runs it.
+                        Such an iteration is called a tick in the Event Loop. Each event is just a function callback.
+                    </p>
+                </div>
+                <!-- blog meta data -->
+                <div class="blog-meta">
+                    <img src="./author.svg" alt="Author Image">
+                    <div>
+                        <h4>Saad Hossain</h4>
+                        <p>On 14 Sept 2022</p>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+</body>
+
+</html>
